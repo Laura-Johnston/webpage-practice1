@@ -1,0 +1,78 @@
+<html><title>Lacrosse Fanatic Webpage </title>
+<head><style> 
+*{text-align: center;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+line-height: 1.5;}
+body{background-color: #e0e0e0;}
+div{max-width: 600; margin: 0 auto; padding: 10px 200px; border: solid; border-color: #4a148c; border-radius:10px 10px 10px 10px;}
+h1{font-size: 3em;
+margin-top: 50px;
+color: #4a148c;
+border: 6px solid #fcfcfc;
+border-radius: 15px;
+padding: 6.5px;}
+h2{text-decoration: underline;
+font-size: 2em; font-weight: bolder;
+color:#4e288f}
+.newToLacrosse { text-decoration-line: none; margin: 20px 20px 20px 20px; font-size: 1.8em;}
+img{border-radius: 4px;display: inline;margin: 10px;}
+hr{color: #4e288f;
+border: solid;
+margin-top: 20px;
+height: 0.5px;background-color: #4e288f;}
+p{ margin:20px 20px 20px 20px ;}
+a{font-size: 1.4em;}
+h3{color:#4e288f;
+font-size: 1.4em;}
+button{display: block; 
+color: white;
+font-size: 1.4em;
+background-color: #4e288f;
+margin: 0 auto;
+border-radius: 12px;
+padding: 20px 20px;
+box-shadow: 8px 8px 8px 8px #b39ddb;}
+button:hover {opacity: 0.6;cursor: crosshair;transition: 200ms ease-in-out;}
+.codedBy{text-align: left;font-family:monospace ; margin: 20px auto 20px auto; }
+
+
+
+
+
+</style> </head>
+<body> <div class="container">
+   <strong> <h1>Lacrosse Fanatics</h1></strong>
+   <h2>We Welcome You!</h2>
+
+  <img src="https://www.uslacrosse.org/sites/default/files/public/images/blog/girls-sticks-1080.jpg" alt="lacrosseTeam" width="350" height="200"/>
+  <img src="https://s3-us-west-2.amazonaws.com/sportshub2-uploads-prod/files/sites/1065/2019/10/18164159/Lacrosse-pic2-300x163.jpg" alt="lacrosseStick" width ="350" height="200"/></ul>
+  
+  <hr/>
+  <h2 class="newToLacrosse">New to Lacrosse?</h2>
+  <p>No problem. </br> Lacrosse is a team sport played with a lacrosse stick and a lacrosse ball, both pictured above. Players use the head of the lacrosse stick to carry, pass, catch, and shoot the ball into the goal. The sport has four
+versions that have different sticks, fields, rules and equipment: </br></p>
+<strong><p class="typesOfLacrosse">Field lacrosse, Women's lacrosse, Box lacrosse and Intercrosse.</p> </strong>
+<p>
+The men's games, field lacrosse (outdoor) and box lacrosse (indoor), are contact sports and all players
+wear protective gear: helmet, gloves, shoulder pads, and elbow pads.The women's game is played outdoors and does not
+allow body contact but does allow stick to stick contact.The only protective gear required for women players is
+eyegear, while goalies wear helmets and protective pads. Intercrosse is a mixed-gender non-contact sport played indoors
+that uses an all-plastic stick and a softer ball.</br></br>
+
+ <a href="https://en.wikipedia.org/wiki/Lacrosse">Want to learn more? Click Here:</a></p> <hr/>
+ <h3>Now you're hooked click below to sign up to our club's mailing list, so we can get you playing ASAP!</h3><br>
+ <button class="Emailbutton">Click me to get your spot at the club </button>
+</br>
+<P class="codedBy">This page was coded by Laura Johnston</P></div>
+<script> 
+function Team() 
+    {let name=prompt ("What is your Name?");
+    let email=prompt ("What is your email?");
+    let age=prompt ("What is your age?")
+    if (age <= 18) {alert ("You qualify for the Junior squad");}
+    else { alert("You qualify for the Senior squad");}
+   { let lacrosse=prompt ("Which Team do you wish to play for: Men's, Lady's or Mixed?") 
+   alert( "Thanks " + name + " we will get in contact about the " + lacrosse + " team shortly 😊")}
+}let Emailbutton=document.querySelector(".Emailbutton");
+Emailbutton.addEventListener("click", Team);
+</script></body>
